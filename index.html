@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vinicius Matos — Barbeiro</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;600;700;900&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="img/Icone-Favcon.png" type="image/x-icon">
+</head>
+<body>
+
+  
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+ 
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#hero"         onclick="closeMobile()">Início</a>
+    <a href="#sobre"        onclick="closeMobile()">Sobre</a>
+    <a href="#servicos"     onclick="closeMobile()">Serviços</a>
+    <a href="#galeria"      onclick="closeMobile()">Galeria</a>
+    <a href="#agendar"      onclick="closeMobile()">Agendar</a>
+    <a href="#certificados" onclick="closeMobile()">Certificados</a>
+    <a href="#avaliacoes"   onclick="closeMobile()">Avaliações</a>
+    <button class="mobile-close" onclick="closeMobile()">✕</button>
+  </div>
+
+  
+  <nav id="navbar">
+    <div class="logo">VINI<span>.</span>BARBER</div>
+    <ul class="nav-links">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#certificados">Certificados</a></li>
+      <li><a href="#avaliacoes">Avaliações</a></li>
+      <li><a href="#agendar" class="nav-cta">Agendar</a></li>
+    </ul>
+    <button class="hamburger" onclick="toggleMobile()">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+
+  <section id="hero">
+    <div class="hero-left">
+      <div class="hero-eyebrow">
+        <div class="eyebrow-line"></div>
+        <span>Barbeiro Profissional · Joinville, SC</span>
+      </div>
+      <h1 class="hero-name">
+        VINICIUS<br>
+        <span class="outline">MATOS</span>
+        <span class="accent-text">BARBER</span>
+      </h1>
+      <p class="hero-tagline">Precisão, estilo e identidade. Cada corte é uma obra única. Do fade clássico ao degradê moderno — feito pra você se sentir no topo.</p>
+      <div class="hero-btns">
+        <a href="#agendar" class="btn-main">Agendar Agora</a>
+        <a href="#galeria"  class="btn-ghost">Ver Trabalhos</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-num">500+</div>
+          <div class="stat-label">Clientes Atendidos</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3+</div>
+          <div class="stat-label">Anos de Experiência</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" id="heroRating">—</div>
+          <div class="stat-label">Avaliação Média</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <img src="img/Perfil-Barbeiro.jpeg" alt="Vinicius Matos Barbeiro" class="hero-photo">
+      <div class="hero-photo-overlay"></div>
+      <div class="hero-badge"><div class="hero-badge-inner">TOP<br>BARBER<br>2025</div></div>
+    </div>
+  </section>
+
+ 
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>CORTE ✦</span><span>BARBA ✦</span><span>FADE ✦</span>
+      <span>DEGRADÊ ✦</span><span>SOBRANCELHA ✦</span><span>VINICIUS MATOS BARBER ✦</span>
+      <span>JOINVILLE SC ✦</span><span>CORTE ✦</span><span>BARBA ✦</span>
+      <span>FADE ✦</span><span>DEGRADÊ ✦</span><span>SOBRANCELHA ✦</span>
+      <span>VINICIUS MATOS BARBER ✦</span><span>JOINVILLE SC ✦</span>
+    </div>
+  </div>
+
+  <section id="sobre">
+    <div class="sobre-text reveal">
+      <div class="section-tag">Sobre mim</div>
+      <h2 class="section-title">ARTE<br>NAS <em>MÃOS</em></h2>
+      <div class="about-text">
+        <p>Com 21 anos e uma paixão genuína pelo que faz, Vinicius Matos transformou a barbearia em muito mais do que um serviço — é uma experiência. Cada cliente sai diferente. Sai confiante.</p>
+        <p>Especializado em fades, degradês e cortes modernos, une técnica apurada com um olhar criativo único. Seu traço na navalha fala por si só.</p>
+      </div>
+      <div class="about-highlight">
+        <p>"Não é só um corte. É a primeira coisa que as pessoas veem em você."</p>
+      </div>
+    </div>
+    <div class="sobre-fotos reveal">
+      <div class="img-box main">
+        <img src="img/Vinicius-Trabalhando.jpeg" alt="Vinicius trabalhando">
+      </div>
+      <div class="img-box">
+        <img src="img/maquina.jpg" alt="Atendimento">
+      </div>
+      <div class="img-box">
+        <img src="img/corte.jpg" alt="Corte">
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="servicos">
+    <div class="services-header reveal">
+      <div class="section-tag center">Serviços & Preços</div>
+      <h2 class="section-title center">O QUE EU<br><em>FAÇO</em></h2>
+    </div>
+
+    <div class="services-grid reveal">
+      
+      <div class="service-card">
+        <div class="svc-img">
+          <img src="img/Trabalho1.jpg" alt="Corte de Cabelo">
+          <div class="svc-img-overlay"></div>
+        </div>
+        <div class="svc-body">
+          <div class="svc-icon">✂️</div>
+          <div class="svc-name">Corte de Cabelo</div>
+          <div class="svc-desc">Fade, degradê, social ou moderno. Corte preciso adaptado ao seu rosto e estilo.</div>
+          <div class="svc-price">R$ 40</div>
+        </div>
+      </div>
+
+      
+      <div class="service-card">
+        <div class="svc-img">
+          <img src="img/barba.jpg" alt="Barba">
+          <div class="svc-img-overlay"></div>
+        </div>
+        <div class="svc-body">
+          <div class="svc-icon">🪒</div>
+          <div class="svc-name">Barba</div>
+          <div class="svc-desc">Aparada, desenhada ou à navalha. Barba alinhada que emoldura o rosto com estilo.</div>
+          <div class="svc-price">R$ 35</div>
+        </div>
+      </div>
+
+    
+      <div class="service-card">
+        <div class="svc-img">
+          <img src="img/Sombrancelha.jpeg" alt="Sobrancelha">
+          <div class="svc-img-overlay"></div>
+        </div>
+        <div class="svc-body">
+          <div class="svc-icon">👁️</div>
+          <div class="svc-name">Sobrancelha</div>
+          <div class="svc-desc">Design e alinhamento masculino para um visual mais limpo e definido.</div>
+          <div class="svc-price">R$ 5</div>
+        </div>
+      </div>
+    </div>
+
+  
+    <div class="combo-card reveal">
+      <div class="combo-img">
+        <img src="img/servico-completo.jpg" alt="Combo Completo">
+        <div class="combo-img-overlay"></div>
+      </div>
+      <div class="combo-body">
+        <span class="combo-badge">⚡ MAIS PEDIDO</span>
+        <div class="combo-icon">💈</div>
+        <div class="combo-name">Cabelo + Barba + Sobrancelha</div>
+        <div class="combo-desc">O combo completo. Sai da cadeira totalmente transformado — cabelo, barba e sobrancelha impecáveis.</div>
+        <div class="combo-preco-wrap">
+          <div class="combo-de">De R$ 80</div>
+          <div class="combo-price">R$ 70</div>
+          <div class="combo-economia">✅ Você economiza R$ 10</div>
+        </div>
+        <a href="#agendar" class="btn-main combo-btn">AGENDAR AGORA</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria">
+    <div class="gallery-header reveal">
+      <div>
+        <div class="section-tag">Portfólio</div>
+        <h2 class="section-title">MEUS<br><em>TRABALHOS</em></h2>
+      </div>
+      <p class="gallery-sub">Cada corte conta uma história. Veja alguns resultados.</p>
+    </div>
+    <div class="gallery-grid reveal">
+      <div class="gitem big">
+        <img src="img/Vinicius-trabalhando2.jpeg" alt="Vinicius na barbearia">
+        <div class="goverlay"><span>Atendimento</span></div>
+      </div>
+      <div class="gitem">
+        <img src="img/Trabalho2.jpeg" alt="Corte 1">
+        <div class="goverlay"><span>Corte</span></div>
+      </div>
+      <div class="gitem">
+        <img src="img/Trabalho5.jpg" alt="Corte 2">
+        <div class="goverlay"><span>Degradê</span></div>
+      </div>
+      <div class="gitem">
+        <img src="img/Trabalho3.jpeg" alt="Corte 3">
+        <div class="goverlay"><span>Fade</span></div>
+      </div>
+      <div class="gitem">
+        <img src="img/Trabalho4.jpeg" alt="Corte 4">
+        <div class="goverlay"><span>Corte + Fade</span></div>
+      </div>
+      
+    </div>
+  </section>
+
+    <div class="booking-wrap">
+      
+      <div class="booking-info reveal">
+        <div class="section-tag">Agendamento</div>
+        <h2 class="section-title">MARQUE<br>SEU <em>HORÁRIO</em></h2>
+        <p class="booking-sub">Escolha o dia e horário que melhor se encaixa na sua rotina. Confirmação direto no WhatsApp.</p>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">01</div>
+            <div class="step-text">
+              <h4>Escolha o Serviço</h4>
+              <p>Corte, barba, sobrancelha ou o combo completo.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">02</div>
+            <div class="step-text">
+              <h4>Escolha o Dia e Hora</h4>
+              <p>Veja os horários disponíveis e escolha o melhor.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">03</div>
+            <div class="step-text">
+              <h4>Confirme via WhatsApp</h4>
+              <p>O pedido vai direto para o WhatsApp do Vinicius.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="wpp-note">
+          <span>💬</span>
+          <p>Confirmação pelo <strong>WhatsApp</strong> em até 30 minutos!</p>
+        </div>
+      </div>
+
+      
+      <div class="booking-form-wrap reveal">
+        <div class="booking-form">
+          <div class="fsec-title">📋 Seus dados</div>
+          <div class="fgroup">
+            <label>Nome completo</label>
+            <input type="text" id="clientName" placeholder="Seu nome">
+          </div>
+          <div class="fgroup">
+            <label>WhatsApp</label>
+            <input type="tel" id="clientPhone" placeholder="(47) 9 0000-0000">
+          </div>
+          <div class="fgroup">
+            <label>Serviço desejado</label>
+            <select id="clientService">
+              <option value="">Selecione...</option>
+              <option value="Corte de Cabelo — R$ 40">Corte de Cabelo — R$ 40</option>
+              <option value="Barba — R$ 35">Barba — R$ 35</option>
+              <option value="Sobrancelha — R$ 5">Sobrancelha — R$ 5</option>
+              <option value="Cabelo + Barba + Sobrancelha — R$ 70">Cabelo + Barba + Sobrancelha — R$ 70 🔥</option>
+            </select>
+          </div>
+
+          <div class="fsec-title">📅 Escolha o dia</div>
+          <div class="cal-wrap">
+            <div class="cal-header">
+              <button class="cal-nav" onclick="changeMonth(-1)">‹</button>
+              <div class="cal-month" id="calMonth"></div>
+              <button class="cal-nav" onclick="changeMonth(1)">›</button>
+            </div>
+            <div class="cal-weekdays">
+              <span>Dom</span><span>Seg</span><span>Ter</span>
+              <span>Qua</span><span>Qui</span><span>Sex</span><span>Sáb</span>
+            </div>
+            <div class="cal-grid" id="calGrid"></div>
+          </div>
+
+          <div class="fsec-title">🕐 Escolha o horário</div>
+          <div class="time-grid" id="timeGrid"></div>
+          <div class="slot-legend">
+            <div class="legend-item"><div class="ldot yellow"></div>Selecionado</div>
+            <div class="legend-item"><div class="ldot dark"></div>Ocupado</div>
+          </div>
+
+          <div class="booking-summary" id="bookingSummary" style="display:none">
+            <div class="sum-title">📋 Resumo do Agendamento</div>
+            <div class="sum-row"><span>Serviço</span><span class="sum-val" id="sumService">—</span></div>
+            <div class="sum-row"><span>Data</span><span class="sum-val" id="sumDate">—</span></div>
+            <div class="sum-row"><span>Horário</span><span class="sum-val" id="sumTime">—</span></div>
+          </div>
+
+          <button class="btn-submit" onclick="submitBooking()">CONFIRMAR VIA WHATSAPP →</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+  <section id="certificados">
+    <div class="services-header reveal">
+      <div class="section-tag center">Formação</div>
+      <h2 class="section-title center">MEUS<br><em>CERTIFICADOS</em></h2>
+    </div>
+    <div class="certs-grid reveal">
+      <div class="cert-card">
+       
+        
+        <img src="img/certificado.png" alt="">
+      </div>
+      
+  </section>
+
+  
+  <section id="avaliacoes">
+    <div class="services-header reveal">
+      <div class="section-tag center">Avaliações</div>
+      <h2 class="section-title center">O QUE<br><em>DIZEM</em></h2>
+    </div>
+
+    <div class="rating-panel reveal">
+      <div class="rating-score">
+        <div class="rating-big" id="ratingBig">—</div>
+        <div class="rating-stars" id="ratingStarsDisplay">☆☆☆☆☆</div>
+        <div class="rating-total" id="ratingTotal">0 avaliações</div>
+      </div>
+      <div class="rating-bars">
+        <div class="bar-row"><span class="bar-lbl">5 ★</span><div class="bar-track"><div class="bar-fill" id="bar5"></div></div><span class="bar-cnt" id="count5">0</span></div>
+        <div class="bar-row"><span class="bar-lbl">4 ★</span><div class="bar-track"><div class="bar-fill" id="bar4"></div></div><span class="bar-cnt" id="count4">0</span></div>
+        <div class="bar-row"><span class="bar-lbl">3 ★</span><div class="bar-track"><div class="bar-fill" id="bar3"></div></div><span class="bar-cnt" id="count3">0</span></div>
+        <div class="bar-row"><span class="bar-lbl">2 ★</span><div class="bar-track"><div class="bar-fill" id="bar2"></div></div><span class="bar-cnt" id="count2">0</span></div>
+        <div class="bar-row"><span class="bar-lbl">1 ★</span><div class="bar-track"><div class="bar-fill" id="bar1"></div></div><span class="bar-cnt" id="count1">0</span></div>
+      </div>
+      <div class="rating-cta">
+        <p>Já foi atendido pelo Vinicius?</p>
+        <button class="btn-avaliar" onclick="abrirModalAvaliacao()">✍️ DEIXAR AVALIAÇÃO</button>
+      </div>
+    </div>
+
+    <div class="reviews-list" id="reviewsList"></div>
+  </section>
+
+  
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">VINI<span>.</span>BARBER</div>
+        <p class="footer-desc">Vinicius Matos — Barbeiro profissional em Joinville, SC. Precisão, estilo e atendimento de qualidade.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Links</h5>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#agendar">Agendar</a></li>
+          <li><a href="#avaliacoes">Avaliações</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Horários</h5>
+        <p>Seg–Sex: 09h–20h<br>Sábado: 09h–17h<br>Domingo: Fechado</p>
+      </div>
+      <div class="footer-col">
+        <h5>Contato</h5>
+        <p>Joinville, SC<br><br>WhatsApp:<br>(47) 9 0000-0000</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Vinicius Matos Barber. Todos os direitos reservados.</p>
+      <div class="social-links">
+        <a href="#" class="social-link" aria-label="Instagram">ig</a>
+        <a href="#" class="social-link" aria-label="WhatsApp">wa</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <div class="modal-overlay" id="modal">
+    <div class="modal">
+      <div class="modal-icon">✅</div>
+      <h3>AGENDADO!</h3>
+      <p>Redirecionando para o WhatsApp do Vinicius para confirmar seu horário.</p>
+      <div class="modal-detail" id="modalDetail"></div>
+      <button class="modal-close" onclick="closeModal()">FECHAR</button>
+    </div>
+  </div>
+
+ 
+  <div class="modal-overlay" id="modalAvaliacao">
+    <div class="modal modal-review">
+      <button class="modal-x" onclick="fecharModalAvaliacao()">✕</button>
+      <div class="modal-icon">✂️</div>
+      <h3>AVALIE O VINI</h3>
+      <p>Conta pra gente como foi sua experiência!</p>
+      <div class="rfgroup">
+        <label>Seu nome</label>
+        <input type="text" id="reviewName" placeholder="Ex: João Silva">
+      </div>
+      <div class="rfgroup">
+        <label>Sua nota</label>
+        <div class="star-picker">
+          <span class="star-pick" data-star="1">★</span>
+          <span class="star-pick" data-star="2">★</span>
+          <span class="star-pick" data-star="3">★</span>
+          <span class="star-pick" data-star="4">★</span>
+          <span class="star-pick" data-star="5">★</span>
+        </div>
+        <div class="star-label" id="starLabel">Clique nas estrelas para avaliar</div>
+      </div>
+      <div class="rfgroup">
+        <label>Seu comentário</label>
+        <textarea id="reviewComment" rows="4" placeholder="Conte como foi o atendimento, o corte, o ambiente..."></textarea>
+      </div>
+      <button class="btn-submit" onclick="enviarAvaliacao()">ENVIAR AVALIAÇÃO →</button>
+    </div>
+  </div>
+
+  
+  <div class="modal-overlay" id="modalAvaliacaoOk">
+    <div class="modal">
+      <div class="modal-icon">⭐</div>
+      <h3>OBRIGADO!</h3>
+      <p>Sua avaliação foi registrada. Muito obrigado pelo carinho!</p>
+      <button class="modal-close" onclick="fecharModalOk()">FECHAR</button>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
